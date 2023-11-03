@@ -1,6 +1,5 @@
 import requests
 import datetime
-from temp.py impor temp
 
 def write_googlesheet(userID, idm ):
     url = "https://maker.ifttt.com/trigger/Raspberry pi/with/key/cVp2xAidWLVQlbWsmfG4UX"
