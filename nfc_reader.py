@@ -10,7 +10,7 @@ class MyCardReader(object):
         userID = str(tag.ndef.records[0].text)
         idm = binascii.hexlify(tag.identifier).upper().decode("utf-8")
         mqtt_publish(userID, idm)
-        #write_googlesheet(userID, idm)
+        write_googlesheet(userID, idm)
         return True
 
     def read_id(self):
